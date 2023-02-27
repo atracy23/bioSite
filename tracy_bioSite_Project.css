@@ -43,6 +43,9 @@ bioSite Project CSS
     font-style: normal;
 }
 
+head{
+    
+}
 header{
     background-color:cornflowerblue;
     color: white;
@@ -52,13 +55,18 @@ header{
     font-size:xx-large;
     font-weight: 600;
     font-size: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: underline;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+        
 }
+
 #navbar{
     overflow: hidden;
     background-color: lightsteelblue;
     border-bottom: solid 15px midnightblue;
+    
+
     
 }
 
@@ -77,15 +85,32 @@ header{
 
 }
 
+body{
+    scroll-behavior: auto;
+}
+
 #container{
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 10px;    
+   
 }
 
+.container{
+    border: cornflowerblue;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    transition: .3s;
+    width: fit-content;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 30px;
+    text-align: left;
+}
 
-.grid-container{
+#grid-container{
     display:grid;
     justify-content: space-evenly;
     box-sizing:border-box;
@@ -95,162 +120,6 @@ header{
     
 }
 
-.grid-item-1{
-    /*Christmas 2022*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( blue,darkblue, midnightblue);
-    grid-column: 2;
-    grid-row: 3/ span 3;
-    height: 350px;
-    
-}
-.grid-item-2{
-    /*Summer 2017*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( blue,darkblue, midnightblue);
-    grid-column: 1;
-    grid-row: 1/span 3;
-    width: 350px;
-    height: 350px;
-}
-.grid-item-3{
-    /*Tristan Tracy*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( lightblue, lightskyblue, royalblue);
-    grid-column: 2;
-    grid-row: 6/span 2; 
-    width: 350px;   
-    justify-content: center;
-}    
-
-.grid-item-4{
-    /*Grandslam*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( lightblue, lightskyblue, royalblue);
-    grid-column: 2;
-    grid-row: 1/span 2;
-    height: 300px;
-        
-}    
-
-.grid-item-5{
-    /*Vivian Tracy*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( lightblue, lightskyblue, royalblue);
-    grid-column: 1;
-    grid-row: 4/span 2;
-       
-}    
-
-.grid-item-6{
-    /*Homecoming*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( blue,darkblue, midnightblue);
-    grid-column: 3;
-    grid-row: 1 / span 4;
-    height: 600px;
-}
-
-.grid-item-7{
-    /*Colton Tracy*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( blue,darkblue, midnightblue);
-    grid-column: 1;
-    grid-row: 6/span 2;
-    
-}
-
-.grid-item-8{
-    /*Male Althete of the Year*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( lightblue, lightskyblue, royalblue);
-    grid-column: 3;
-    grid-row: 5/ span 3;
-    width: 325px; 
-    height: 500px;
-    
-}
-
-.grid-item-9{
-    /*Front Porch*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( lightblue, lightskyblue, royalblue);
-    grid-column: 3/span 2;
-    grid-row: 3/span 2;
-    width: 325px; 
-    height: 500px;
-}
-
-.grid-item-10{
-    /*Bathroom*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( lightblue, lightskyblue, royalblue);
-    grid-column: 1;
-    grid-row: 2/span 3;
-    width: 325px; 
-    height: 600px;
-}
-
-.grid-item-11{
-    /*Office*/
-    border: 25px;
-    border-style: ridge;
-    padding: 10px;
-    background-image: radial-gradient( lightblue, lightskyblue, royalblue);
-    grid-column: 6/span 2;
-    grid-row: 1/span 2;
-    width: 325px; 
-    height: 450px;
-}
-
-.grid-item-12{
-    /*Hobbies*/
-    grid-column: 2/span 4;
-    grid-row: 1/span 2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-    transition: .3s;
-    width: 900px;
-    background-color: lightgrey;
-    box-sizing: border-box;
-    margin: 20px;
-    padding: 30px;
-    text-align: left;
-    height: 500px;
-    width: 650px;
-}
-
-.grid-item-13{
-    /*YouTube*/
-    grid-column: 5/span 2;
-    grid-row: 3/span 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-    transition: .3s;
-    background-color: lightgrey;
-    box-sizing: border-box;
-    height: fit-content;
-    width: fit-content;
-    
-}
 
 div.static{
     position: static;
@@ -262,6 +131,13 @@ h1{
     color:midnightblue;
     text-decoration-line: underline;
 }
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: midnightblue;
+}
+
 h3{
     font-size: 25px;
     color: lightcyan;
@@ -320,4 +196,31 @@ footer a:hover{
 }
 body{
     background-color:whitesmoke;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    
+    float: left;
+    width: 33.33%;
+}
+
+.column figure{
+    border: 25px;
+    border-style: ridge;
+    padding: 10px;
+    background-image: radial-gradient( lightblue, lightskyblue, royalblue);
+    width: fit-content; 
+    height: fit-content;
+}
+
+@media screen and (max-width: 600px){
+    .column{
+        width: 100%;
+    }
 }
